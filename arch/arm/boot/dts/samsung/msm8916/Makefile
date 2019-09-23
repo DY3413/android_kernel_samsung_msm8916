@@ -223,6 +223,15 @@ ifeq ($(CONFIG_SEC_E5_PROJECT),y)
 	endif
 endif
 
+ifeq ($(CONFIG_SEC_GRANDMAX_PROJECT),y)
+	ifeq ($(CONFIG_MACH_GRANDMAX_SWA_OPEN),y)
+	dtb-y += msm8916-sec-grandmax-r04.dtb
+	else ifeq ($(CONFIG_MACH_GRANDMAX_KOR_OPEN),y)
+		dtb-y += msm8916-sec-grandmax-kor-r04.dtb
+		dtb-y += msm8916-sec-grandmax-kor-r05.dtb
+	endif
+endif
+
 ifeq ($(CONFIG_SEC_A3_PROJECT),y)
 	ifeq ($(CONFIG_MACH_A3U_EUR_OPEN),y)
 		dtb-y += msm8916-sec-a3u-eur-r01.dtb

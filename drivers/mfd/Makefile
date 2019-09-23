@@ -194,4 +194,5 @@ obj-$(CONFIG_MFD_RT5033) += rt5033_core.o rt5033_irq.o
 obj-$(CONFIG_MFD_SM5703) 	+= sm5703_core.o sm5703_irq.o
 obj-$(CONFIG_MFD_SM5701) 	+= sm5701_core.o sm5701_irq.o
 obj-$(CONFIG_MFD_S2MU003)	+= s2mu003_core.o s2mu003_irq.o
+obj-$(CONFIG_MFD_ISL98611)	+= isl98611.o
 obj-$(CONFIG_MFD_LM3632)	+= lm3632.o
