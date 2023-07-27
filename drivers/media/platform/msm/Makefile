@@ -23,6 +23,8 @@ else ifeq ($(CONFIG_SEC_SERRANOVE_PROJECT),y)
 obj-$(CONFIG_MSMB_CAMERA) += camera_v2_serranovexx/
 else ifeq ($(CONFIG_SEC_O7_PROJECT),y)
 obj-$(CONFIG_MSMB_CAMERA) += camera_v2_o7/
+else ifeq ($(CONFIG_SEC_ON7N_PROJECT),y)
+obj-$(CONFIG_MSMB_CAMERA) += camera_v2_o7/
 else ifeq ($(CONFIG_SEC_J5X_PROJECT),y)
 ifeq ($(CONFIG_MACH_J5XLTE_CHN_CMCC),y)
 obj-$(CONFIG_MSMB_CAMERA) += camera_v2_j3x/
