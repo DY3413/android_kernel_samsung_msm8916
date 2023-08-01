@@ -46,3 +46,7 @@
 &secure_mem {
 	reg = <0 0 0 0x6D00000>;
 };
+
+&cont_splash_mem {
+	reg = <0x0 0x8E000000 0x0 0x1400000>;
+};
