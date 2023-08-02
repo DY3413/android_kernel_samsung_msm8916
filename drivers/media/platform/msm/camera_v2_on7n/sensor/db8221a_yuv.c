@@ -354,9 +354,12 @@ int32_t db8221a_sensor_config(struct msm_sensor_ctrl_t *s_ctrl,
 			db8221a_set_effect(s_ctrl, db8221a_ctrl.settings.effect);
 			//db8221a_set_white_balance(s_ctrl, db8221a_ctrl.settings.wb);
 			db8221a_set_exposure_compensation(s_ctrl , db8221a_ctrl.settings.exposure);
+			msleep(100); //Sensor needs 400~500ms of AWB/AE stable time after video recording
 			db8221a_set_resolution(s_ctrl , resolution);
 		}
 		else if(db8221a_ctrl.op_mode == CAMERA_MODE_PREVIEW){
+			db8221a_set_effect(s_ctrl, db8221a_ctrl.settings.effect);
+			db8221a_set_exposure_compensation(s_ctrl , db8221a_ctrl.settings.exposure);
 			db8221a_set_resolution(s_ctrl, resolution);
 		}
 		else if((db8221a_ctrl.prev_mode == CAMERA_MODE_PREVIEW)
