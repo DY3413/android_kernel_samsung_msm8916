@@ -14,7 +14,7 @@
 #ifndef __CAMERA2_H__
 #define __CAMERA2_H__
 
-#include <media/msm_cam_sensor.h>
+#include "../../../include/media/msm_cam_sensor.h"
 #include <mach/board.h>
 #include <linux/interrupt.h>
 #include <linux/of_platform.h>
