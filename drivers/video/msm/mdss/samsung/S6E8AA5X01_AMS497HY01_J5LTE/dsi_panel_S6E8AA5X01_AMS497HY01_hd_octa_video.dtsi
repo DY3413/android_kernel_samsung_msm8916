@@ -18,9 +18,8 @@
 
  */
 &mdss_mdp {
-	ss_dsi_panel_S6E8AA5X01_AMS497HY01_720p: ss_dsi_panel_S6E8AA5X01_AMS497HY01_720p {
-		//qcom,mdss-dsi-panel-name = "ss_dsi_panel_S6E8AA5X01_AMS497HY01_HD";
-		qcom,mdss-dsi-panel-name = "ss_dsi_panel_S6E8AA5X01_AMS497HY01_720p";
+	ss_dsi_panel_S6E8AA5X01_AMS497HY01_HD: ss_dsi_panel_S6E8AA5X01_AMS497HY01_HD {
+		qcom,mdss-dsi-panel-name = "ss_dsi_panel_S6E8AA5X01_AMS497HY01_HD";
 		qcom,mdss-dsi-panel-controller = <&mdss_dsi0>;
 		qcom,mdss-dsi-panel-type = "dsi_video_mode";
 		qcom,mdss-dsi-panel-destination = "display_1";
@@ -380,12 +379,12 @@
 			39 01 00 00 00 00 03 B6 BC 19 /* 10 DEFAULT_ELVSS(0x19) */
 			39 01 00 00 00 00 03 B6 BC 18 /* 11 DEFAULT_ELVSS(0x18) */
 			39 01 00 00 00 00 03 B6 BC 17 /* 12 DEFAULT_ELVSS(0x17) */
-			39 01 00 00 00 00 03 B6 BC 16/* 13 DEFAULT_ELVSS(0x16) */
+			39 01 00 00 00 00 03 B6 BC 16 /* 13 DEFAULT_ELVSS(0x16) */
 			39 01 00 00 00 00 03 B6 BC 15 /* 14 DEFAULT_ELVSS(0x15) */
 			39 01 00 00 00 00 03 B6 BC 14 /* 15 DEFAULT_ELVSS(0x14) */
 			39 01 00 00 00 00 03 B6 BC 13 /* 16 DEFAULT_ELVSS(0x13) */
 			39 01 00 00 00 00 03 B6 BC 12 /* 17 DEFAULT_ELVSS(0x12) */
-			39 01 00 00 00 00 03 B6 BC 11/* 18 DEFAULT_ELVSS(0x11) */
+			39 01 00 00 00 00 03 B6 BC 11 /* 18 DEFAULT_ELVSS(0x11) */
 			39 01 00 00 00 00 03 B6 BC 0F /* 19 DEFAULT_ELVSS(0x0F) */
 		];
 		/* bl_level, Index in elvss command list */

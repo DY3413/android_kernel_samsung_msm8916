@@ -18,7 +18,7 @@
 #include "msm8916-sec-j5-battery-r00.dtsi"
 #include "msm8916-sec-j5lte-kor-tdmb-r01.dtsi"
 #include "../../../../../../drivers/video/msm/mdss/samsung/S6D7AA0X62_BV050HDM/dsi_panel_S6D7AA0X62_BV050HDM_hd_5_0_video.dtsi"
-#include "../../../../../../drivers/video/msm/mdss/samsung/S6E8AA5X01_AMS497HY01/dsi_panel_S6E8AA5X01_AMS497HY01_hd_octa_video.dtsi"
+#include "../../../../../../drivers/video/msm/mdss/samsung/S6E8AA5X01_AMS497HY01_J5LTE/dsi_panel_S6E8AA5X01_AMS497HY01_hd_octa_video.dtsi"
 / {
 	aliases {
 		serial0 = &blsp1_uart2;
