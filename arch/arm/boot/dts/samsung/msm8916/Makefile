@@ -390,6 +390,13 @@ ifeq ($(CONFIG_SEC_J5_PROJECT),y)
 	endif
 endif
 
+ifeq ($(CONFIG_SEC_J75_PROJECT),y)
+	ifeq ($(CONFIG_MACH_J75LTE_KOR_KTT),y)
+		dtb-y += msm8916-sec-j75lte-kor-r05.dtb
+		dtb-y += msm8916-sec-j75lte-kor-r06.dtb
+	endif
+endif
+
 ifeq ($(CONFIG_SEC_J5N_PROJECT),y)
 	ifeq ($(CONFIG_MACH_J5NLTE_EUR_OPEN),y)
 		dtb-y += msm8916-sec-j5nlte-eur-r04.dtb

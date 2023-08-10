@@ -826,6 +826,20 @@ config MACH_J7_USA_SPR
 		help
 		  Support for Samsung J7 USA SPR device.
 
+config SEC_J75_PROJECT
+	depends on ARCH_MSM8916
+	default n
+	bool "Samsung J75 Project"
+	help
+	  Support for Samsung J75 Project
+
+config MACH_J75LTE_KOR_KTT
+	depends on SEC_J75_PROJECT
+	default n
+	bool "Samsung J75 KOR KTT"
+	help
+	  Support for Samsung J75 KOR KTT device.
+
 config SEC_E5_PROJECT
     depends on ARCH_MSM8916
         default n
