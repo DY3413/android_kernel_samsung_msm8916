@@ -142,6 +142,7 @@ fw-shipped-$(CONFIG_TOUCHSCREEN_MMS300) += tsp_melfas/mms345l_e5.fw
 fw-shipped-$(CONFIG_TOUCHSCREEN_MMS300_A) += tsp_melfas/mms345l_a5.fw
 fw-shipped-$(CONFIG_TOUCHSCREEN_MELFAS_MMS449) += tsp_melfas/mms449_k5.fw tsp_melfas/mms449_a8.fw
 fw-shipped-$(CONFIG_TOUCHSCREEN_MELFAS_MMS438) += tsp_melfas/mms438_xcover3.fw
+fw-shipped-$(CONFIG_TOUCHSCREEN_MELFAS_MMS438) += tsp_melfas/mms438_j7.fw
 fw-shipped-$(CONFIG_KEYBOARD_TC360_TKEY) += tkey/tc360_e5.fw tkey/tc360_e7.fw
 fw-shipped-$(CONFIG_TOUCHSCREEN_ATMEL_MXT1664T) += tsp_atmel/mxtt_klimt.fw
 fw-shipped-$(CONFIG_TOUCHSCREEN_ATMEL_MXT1664T) += tsp_atmel/mxtt_gt510lte.fw
@@ -171,6 +172,7 @@ fw-shipped-$(CONFIG_TOUCHSCREEN_ZT7548_TS)	+= tsp_zinitix/zt7548_gtes.fw
 fw-shipped-$(CONFIG_TOUCHSCREEN_ZT7538_TS)	+= tsp_zinitix/zt7538_o7.fw tsp_zinitix/zt7538_o7_skt.fw
 fw-shipped-$(CONFIG_TOUCHSCREEN_ZT7538) += tsp_zinitix/zt7538_a5x.fw
 fw-shipped-$(CONFIG_KEYBOARD_TC360_TKEY_J5) += coreriver/tc360_j5_dtv.fw coreriver/tc360_j5.fw
+fw-shipped-$(CONFIG_KEYBOARD_TC360_TKEY_J7) += tkey/tc350k_j7.fw
 
 ifdef CONFIG_SEC_O7_PROJECT
 fw-shipped-$(CONFIG_TOUCHSCREEN_IST30XXC) += tsp_imagis/ist3038c_o7.fw
@@ -184,10 +186,6 @@ ifdef CONFIG_SEC_J5X_PROJECT
 fw-shipped-$(CONFIG_TOUCHSCREEN_IST30XXC_CMCS) += tsp_imagis/ist3038c_j5x.fw
 fw-shipped-$(CONFIG_TOUCHSCREEN_IST30XXC_CMCS) += tsp_imagis/ist3038c_j5x_cmcs.bin
 fw-shipped-$(CONFIG_KEYBOARD_TC360_TKEY_J5X) += tkey/tc350k_j5x.fw
-endif
-ifdef CONFIG_SEC_J7_PROJECT
-fw-shipped-$(CONFIG_TOUCHSCREEN_MELFAS_MMS438) += tsp_melfas/mms438_j7.fw
-fw-shipped-$(CONFIG_KEYBOARD_TC360_TKEY_J7) += tkey/tc350k_j7.fw
 endif
 ifdef CONFIG_SEC_J5_PROJECT
 fw-shipped-$(CONFIG_TOUCHSCREEN_IST30XXC) += tsp_imagis/ist3038c_j5.fw
