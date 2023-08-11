@@ -41,9 +41,9 @@
 
 		battery,thermal_source = <2>; /* SEC_BATTERY_THERMAL_SOURCE_ADC */
 
-		battery,temp_table_adc = <25983 26191 26447 26752 27084 27490 28010 28574 29217 29960 30761 31676 32646 33708 34797 35896 36961
+		battery,temp_table_adc = <27084 27490 28010 28574 29217 29960 30761 31676 32646 33708 34797 35896 36961
 			37972 38164 38353 38538 38719 38935 39113 39451 39564 39730 40447 41045 41528>;
-		battery,temp_table_data = <900 850 800 750 700 650 600 550 500 450 400 350 300 250 200 150 100
+		battery,temp_table_data = <700 650 600 550 500 450 400 350 300 250 200 150 100
 			50 40 30 20 10 0 (-10) (-30) (-40) (-50) (-100) (-150) (-200)>;
 		battery,temp_check_type = <2>; /* SEC_BATTERY_TEMP_CHECK_TEMP */
 		battery,temp_check_count = <1>;
@@ -70,41 +70,26 @@
 		   SEC_BATTERY_FULL_CONDITION_VCELL */
 		battery,full_condition_type = <13>;
 		battery,full_condition_soc = <93>;
-		battery,full_condition_vcell = <4210>;
+		battery,full_condition_vcell = <4300>;
 
 		battery,recharge_check_count = <3>;
 		battery,recharge_condition_type = <4>; /* SEC_BATTERY_RECHARGE_CONDITION_VCELL */
 		battery,recharge_condition_soc = <98>;
-		battery,recharge_condition_vcell = <4240>;
-		
-		battery,chg_float_voltage = <4310>;
+		battery,recharge_condition_vcell = <4340>;
 
 		battery,charging_total_time = <21600>;
 		battery,recharging_total_time = <5400>;
 		battery,charging_reset_time = <0>;
 		qcom,sec-battery-vadc = <&pm8916_vadc>;
 
-		battery,standard_curr = <1566>;
-		battery,expired_time = <13680>; /* 158 + 70 minutes */
-		battery,recharging_expired_time = <5400>;
+		//battery,swelling_chg_current = <1500>;
+		battery,swelling_high_chg_current = <2000>;
+		battery,swelling_low_chg_current = <1500>;
+		battery,swelling_full_check_current_2nd = <150>;
 
-		battery,swelling_high_temp_block = <410>;
-		battery,swelling_high_temp_recov = <390>;
-		
-		battery,swelling_low_temp_2step_mode = <1>;
-		battery,swelling_low_temp_block_1st = <150>;
-		battery,swelling_low_temp_recov_1st = <200>;
-		battery,swelling_low_temp_block_2nd = <50>;
-		battery,swelling_low_temp_recov_2nd = <100>;
-		
-		battery,swelling_low_temp_current = <900>;  // 0.3C * 3000
-		battery,swelling_low_temp_topoff = <150>;  // 0.05C
-		battery,swelling_high_temp_current = <1350>;  // 0.45C * 3000
-		battery,swelling_high_temp_topoff = <150>;  // 0.05C
-
-		battery,swelling_drop_float_voltage = <4150>;
-		battery,swelling_high_rechg_voltage = <4000>;
-		battery,swelling_low_rechg_voltage = <4000>;
+		battery,swelling_drop_float_voltage = <4200>;
+		battery,swelling_high_rechg_voltage = <4150>;
+		battery,swelling_low_rechg_voltage = <4050>;
 
 		battery,self_discharging_temp_block = <600>;
 		battery,self_discharging_volt_block = <4250>;
@@ -124,7 +109,7 @@
 			battery,chg_polarity_en = <0>;
 			battery,chg_gpio_status = <0>;
 			battery,chg_polarity_status = <0>;
-			battery,chg_float_voltage = <4310>;
+			battery,chg_float_voltage = <4390>;
 			battery,ovp_uvlo_check_type = <3>; /* SEC_BATTERY_OVP_UVLO_CHGPOLLING */
 			battery,full_check_type = <2>; /* SEC_BATTERY_FULLCHARGED_FG_CURRENT */
 
@@ -138,9 +123,9 @@
 	battery_params {
 		battery,id = <0>; /* -1 means auto, detected by F/G */
 		battery0,battery_type = <4400>; /* 4200 4350 4400 */
-		battery0,battery_table0 = <0x1400 0x1B85 0x1CD5 0x1D67 0x1D87 0x1DDC 0x1E35 0x1E70 0x1EAB 0x1EFC 0x1F23 0x1FA2 0x2021 0x2100 0x21F2 0x2400>;
-		battery0,battery_table1 = <0x1400 0x1B85 0x1CD5 0x1D67 0x1D87 0x1DDC 0x1E35 0x1E70 0x1EAB 0x1EFC 0x1F23 0x1FA2 0x2021 0x2100 0x21F2 0x2400>;
-		battery0,battery_table2 = <0x0 0x2E 0xB8 0x151 0x31E 0x451 0x6B8 0x91E 0xAEB 0xCB8 0xD51 0xE85 0x1051 0x12F5 0x155C 0x1567>;
+		battery0,battery_table0 = <0x1400 0x1B33 0x1CB6 0x1D64 0x1D80 0x1DEA 0x1E55 0x1E99 0x1EC7 0x1F01 0x1F2C 0x1F77 0x2027 0x20EE 0x22C1 0x2399>;
+		battery0,battery_table1 = <0x1400 0x1B33 0x1CB6 0x1D64 0x1D80 0x1DEA 0x1E55 0x1E99 0x1EC7 0x1F01 0x1F2C 0x1F77 0x2027 0x20EE 0x22C1 0x2399>;
+		battery0,battery_table2 = <0x00 0x3D 0xD7 0x18F 0x300 0x4CC 0x866 0xACC 0xC00 0xD33 0xDCC 0xE66 0x10CC 0x1333 0x1800 0x1812>;
 		battery0,temp_std = <25>;
 		battery0,temp_offset = <10>;
 		battery0,temp_offset_cal = <0x01>;
