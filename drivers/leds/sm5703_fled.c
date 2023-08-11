@@ -49,7 +49,8 @@
 #define EN_FLED_IRQ 0
 
 #if defined(CONFIG_SEC_XCOVER3_PROJECT) || defined(CONFIG_MACH_J3LTE_CHN_CTC) || defined(CONFIG_MACH_J3LTE_CHN_TW)\
-|| defined(CONFIG_MACH_J3LTE_SEA_XTC) || defined(CONFIG_MACH_J3LTE_SEA_XSA) || defined(CONFIG_MACH_J3XPROLTE_CHN_CTC) || defined(CONFIG_MACH_J3XPROLTE_CHN_CMCC)|| defined(CONFIG_MACH_J3XPROLTE_CHN_OPEN)
+|| defined(CONFIG_MACH_J3LTE_SEA_XTC) || defined(CONFIG_MACH_J3LTE_SEA_XSA) || defined(CONFIG_MACH_J3XPROLTE_CHN_CTC)\
+|| defined(CONFIG_MACH_J3XPROLTE_CHN_CMCC) || defined(CONFIG_MACH_J3XPROLTE_CHN_OPEN) || defined(CONFIG_MACH_J3LTE_KOR_OPEN)
 #define CONFIG_ACTIVE_FLASH
 #endif
 
@@ -207,7 +208,8 @@ static int sm5703_fled_init(struct sm_fled_info *fled_info)
 #endif
 
 #if defined(CONFIG_SEC_XCOVER3_PROJECT) || defined(CONFIG_MACH_J3LTE_CHN_CTC) || defined(CONFIG_MACH_J3LTE_CHN_TW)\
-|| defined(CONFIG_MACH_J3LTE_SEA_XTC) || defined(CONFIG_MACH_J3LTE_SEA_XSA) || defined(CONFIG_MACH_J3XPROLTE_CHN_CTC) || defined(CONFIG_MACH_J3XPROLTE_CHN_CMCC)|| defined(CONFIG_MACH_J3XPROLTE_CHN_OPEN)
+|| defined(CONFIG_MACH_J3LTE_SEA_XTC) || defined(CONFIG_MACH_J3LTE_SEA_XSA) || defined(CONFIG_MACH_J3XPROLTE_CHN_CTC)\
+|| defined(CONFIG_MACH_J3XPROLTE_CHN_CMCC) || defined(CONFIG_MACH_J3XPROLTE_CHN_OPEN) || defined(CONFIG_MACH_J3LTE_KOR_OPEN)
 	sm5703_reg_write(info->i2c_client, SM5703_Q3LIMITCNTL, 0x80);
 #endif
 
@@ -538,7 +540,8 @@ int32_t sm5703_fled_notification(struct sm_fled_info *fled_info)
 EXPORT_SYMBOL(sm5703_fled_notification);
 
 #if defined(CONFIG_SEC_XCOVER3_PROJECT) || defined(CONFIG_MACH_J3LTE_CHN_CTC)|| defined(CONFIG_MACH_J3LTE_CHN_TW)\
-|| defined(CONFIG_MACH_J3LTE_SEA_XTC) || defined(CONFIG_MACH_J3LTE_SEA_XSA) || defined(CONFIG_MACH_J3XPROLTE_CHN_CTC) || defined(CONFIG_MACH_J3XPROLTE_CHN_CMCC)|| defined(CONFIG_MACH_J3XPROLTE_CHN_OPEN)
+|| defined(CONFIG_MACH_J3LTE_SEA_XTC) || defined(CONFIG_MACH_J3LTE_SEA_XSA) || defined(CONFIG_MACH_J3XPROLTE_CHN_CTC)\
+|| defined(CONFIG_MACH_J3XPROLTE_CHN_CMCC) || defined(CONFIG_MACH_J3XPROLTE_CHN_OPEN) || defined(CONFIG_MACH_J3LTE_KOR_OPEN)
 int preflash = 0;
 int32_t sm5703_fled_set_preflash(struct sm_fled_info *fled_info)
 {
