@@ -553,6 +553,27 @@ config MACH_GTELWIFI_USA_OPEN
         help
           Support for Samsung GTELWIFI USA OPEN device.
 
+config SEC_GRANDMAX_PROJECT
+	depends on ARCH_MSM8916
+	default n
+	bool "Samsung GRANDMAX Project"
+	help
+	  Support for Samsung GRANDMAX Project
+
+config MACH_GRANDMAX_KOR_OPEN
+	depends on SEC_GRANDMAX_PROJECT
+	default n
+	bool "Samsung GRANDMAX KOR OPEN"
+	help
+	  Support for Samsung GRANDMAX KOR OPEN device.
+
+config MACH_GRANDMAX_SWA_OPEN
+	depends on SEC_GRANDMAX_PROJECT
+	default n
+	bool "Samsung GRANDMAX SWA OPEN"
+	help
+	  Support for Samsung GRANDMAX SWA OPEN device.
+
 config SEC_K5_PROJECT
   depends on ARCH_MSM8916
 		  default n
